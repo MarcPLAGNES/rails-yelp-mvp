@@ -1,0 +1,8 @@
+<h1>Restaurant</h1>
+
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.category %></p>
+
+<%= link_to "Back", restaurants_path, class: "btn btn-success" %>
+<%= link_to "Add a review",  new_restaurant_review_path(@restaurant), class: "btn btn-warning" %>
